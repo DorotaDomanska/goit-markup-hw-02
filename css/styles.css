@@ -242,6 +242,13 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.mail-footer:hover,
+.mail-footer:focus,
+.telephone-footer:hover,
+.telephone-footer:focus {
+  color: var(--brand-color)
+}
+
 .buttons {
   width: 93px;
   height: 38px;
