@@ -7,51 +7,39 @@
 }
 
 body {
-  font-family: "Roboto", "Helvetica Neue", "Verdana", "Tahoma", sans-serif;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
   color: var(--brand-color-text);
 }
 
-header {
-  border: 1px solid #ECECEC;
+.header {
+  border: 1px solid #ececec;
 }
 
-.web {
+.logo {
   width: 145px;
   height: 31px;
-  left: 215px;
-  top: 24px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--brand-color);
-}
-
-.studio {
-  color: #000000;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 100%;
-  letter-spacing: 0.03em;
-}
-
-a {
   text-decoration: none;
-  color: var(--brand-color-header);
 }
 
-header a:hover,
-header a:focus {
+.web {
   color: var(--brand-color);
 }
 
-ul {
+.studio-header {
+  color: #000000;
+}
+
+.header a:hover,
+.header a:focus {
+  color: var(--brand-color);
+}
+
+.nav-list {
   list-style-type: none;
 }
 
@@ -66,6 +54,11 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.nav-list-link {
+  text-decoration: none;
+  color: var(--brand-color-header);
+}
+
 .mail,
 .telephone {
   width: 110px;
@@ -76,6 +69,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--brand-color-text);
 }
 
@@ -125,7 +119,11 @@ h1 {
   cursor: pointer;
 }
 
-h3 {
+.lorem-ipsum-list {
+  list-style-type: none;
+}
+
+.lorem-ipsum-list-item {
   width: 270px;
   height: 16px;
   left: 215px;
@@ -143,19 +141,22 @@ h3 {
   height: 75px;
   left: 215px;
   top: 800px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-h2 {
+.images-list-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--brand-color-header);
+}
+
+.images-list {
+  list-style-type: none;
 }
 
 .team {
@@ -179,31 +180,7 @@ h2 {
   letter-spacing: 0.03em;
 }
 
-.web-footer {
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 2157px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--brand-color);
-}
-
 .studio-footer {
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 2157px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 
@@ -220,7 +197,6 @@ footer {
   height: 21px;
   left: 215px;
   top: 2208px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -228,18 +204,18 @@ footer {
 }
 
 .mail-footer {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .telephone-footer {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -247,7 +223,11 @@ footer {
 .mail-footer:focus,
 .telephone-footer:hover,
 .telephone-footer:focus {
-  color: var(--brand-color)
+  color: var(--brand-color);
+}
+
+.buttons-list {
+  list-style-type: none;
 }
 
 .buttons {
@@ -274,27 +254,26 @@ footer {
 }
 
 .project-name {
-width: 322px;
-height: 36px;
-left: 239px;
-top: 576px;
-font-weight: 700;
-font-size: 18px;
-line-height: 2
-letter-spacing: 0.06em;
-color: var(--brand-color-header)
+  width: 322px;
+  height: 36px;
+  left: 239px;
+  top: 576px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--brand-color-header);
 }
 
 .project-type {
   width: 322px;
-height: 30px;
-left: 239px;
-top: 616px;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.03em;
-color: var(--brand-color-text);
+  height: 30px;
+  left: 239px;
+  top: 616px;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-text);
 }
 
 address {
